@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game of rock, papper, scissors</title>
+    <title>game of rock, paper, scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Rock Papper Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
     <!-- player points -->
     <div class="score-board">
-        <div class="badge">Player 1</div>
-        <div class="badge">Player 2</div>
+        <div id="player1" class="badge">Player 1</div>
+        <div id="player2" class="badge">Player 2</div>
         <span id="player1-score">0</span>:<span id="player2-score">0</span>
     </div>
     <!-- announcement win, lose -->
@@ -23,9 +23,15 @@
     </div>
     <!-- game window -->
     <div class="choices">
-        <div class="choice"></div>
-        <div class="choice"></div>
-        <div class="choice"></div>
+        <div id="rock" class="choice">
+            <img src="rock.png" alt="rock">
+        </div>
+        <div id="paper" class="choice">
+            <img src="paper.png" alt="paper">
+        </div>
+        <div id="scissors" class="choice">
+            <img src="scissors.png" alt="scissors">
+        </div>
     </div>
 </body>
 </html>
