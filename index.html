@@ -11,10 +11,14 @@
         <h1>Rock Paper Scissors</h1>
     </header>
     <!-- player points -->
-    <div class="score-board">
-        <div id="player1" class="badge">Player 1</div>
-        <div id="player2" class="badge">Player 2</div>
-        <span id="player1-score">0</span>:<span id="player2-score">0</span>
+    <div class="container">
+        <div class="score-board">
+            <div id="player1" class="badge">Player 1</div>
+            <div id="player2" class="badge">Player 2</div>
+        </div>
+        <div class="players-score">
+            <span id="player1-score">0</span>:<span id="player2-score">0</span>
+        </div>
     </div>
     <!-- announcement win, lose -->
     <div class="result">
@@ -23,15 +27,16 @@
     </div>
     <!-- game window -->
     <div class="choices">
-        <div id="rock" class="choice">
+        <button onclick="play('rock')" id="rock" class="choice">
             <img src="rock.png" alt="rock">
-        </div>
-        <div id="paper" class="choice">
+        </button>
+        <button onclick="play('paper')"  id="paper" class="choice">
             <img src="paper.png" alt="paper">
-        </div>
-        <div id="scissors" class="choice">
+        </button>
+        <button onclick="play('scissors')"  id="scissors" class="choice">
             <img src="scissors.png" alt="scissors">
-        </div>
+        </button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
