@@ -1,9 +1,9 @@
-
-const options = ['rock', 'paper', 'scissors']
-
-function play(choice) {
-    const number = Math.floor(Math.random() * 3);
-    console.log("dennis äger", choice)
-    console.log("computer choice", options[number])
-}
-
+const playerScore = 0;
+const computerScore = 0;
+const playerScoreSpan = document.getElementById("player-score");
+const computerScoreSpan = document.getElementById("computer-score");
+const playersScoreDiv = document.getQuarySelector(".players-score");
+const resultDiv = document.getQuarySelector(".result");
+const rockDiv = document.getElementById("rock");
+const paperDiv = document.getElementById("paper");
+const scissorsDiv = document.getElementById("scissors");
