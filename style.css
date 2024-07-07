@@ -28,6 +28,9 @@ body {
     border: 2px solid rgb(0, 0, 0);
     background-color: #000000;
 }
+.result {
+    font-size: 25px;
+}
 .choices {
     display: flex;
 }

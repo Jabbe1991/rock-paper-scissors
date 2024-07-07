@@ -3,7 +3,7 @@ let computerScore = 0;
 let playerScoreSpan = document.getElementById("player-score");
 let computerScoreSpan = document.getElementById("computer-score");
 const playersScoreDiv = document.querySelector(".players-score");
-const resultDiv = document.querySelector(".result");
+let resultDiv = document.querySelector(".result").style.visibility = "hidden";
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
@@ -16,18 +16,27 @@ function getComputerChoice() {
   return choices [randomNumber];
 }
 
+// what happens when you win or lose even draw
 function win() {
   playerScore++;
   playerScoreSpan.innerText = playerScore;
+  document.querySelector(".winner").style.visibility = "visible";
+  document.querySelector(".loser").style.visibility = "hidden";
+  document.querySelector(".draw").style.visibility = "hidden";
 }
 
 function lose() {
   computerScore++;
   computerScoreSpan.innerText = computerScore;
+  document.querySelector(".winner").style.visibility = "hidden";
+  document.querySelector(".loser").style.visibility = "visible";
+  document.querySelector(".draw").style.visibility = "hidden";
 }
 
 function draw() {
-  
+  document.querySelector(".winner").style.visibility = "hidden";
+  document.querySelector(".loser").style.visibility = "hidden";
+  document.querySelector(".draw").style.visibility = "visible";
 }
 
 // player choice vs computer choice 
